@@ -1,0 +1,74 @@
+// student information ..
+import java.util.Scanner;
+import java.util.Date;
+
+class studentInformation{
+
+  static{
+     System.out.println("Welcome");
+     Date date =  new Date();
+     System.out.println(date);
+}
+
+public static void main(String...argu)throws Exception{
+
+   Scanner sc= new Scanner(System.in);
+   System.out.println("Enter your password");
+   String pass = sc.next();
+   if(pass.equals("abc"))
+   {
+
+   System.out.println("Enter rollno");
+   int rollNo= sc.nextInt();
+
+   System.out.println("Enter student name");
+   String studentName=sc.next();
+   
+   System.out.println("Enter college name");
+   String collegeName =sc.next();
+
+   System.out.println("Enter contact no");
+   long contact = sc.nextLong();
+
+   System.out.println("Enter tenth percentage");
+   float tenthPer = sc.nextFloat();
+
+   System.out.println("Enter tw percentage");
+   float twPer = sc.nextFloat();
+
+   System.out.println("Enter age");
+   short age = sc.nextShort();
+
+   System.out.println("Are you Indian?");
+   boolean nationality = sc.nextBoolean();
+
+   System.out.println("Enter mail id");
+   String mailId= sc.nextLine();
+
+   System.out.println("Enter year");
+   byte year = sc.nextByte();
+
+  System.out.println("..Student Information..");
+  System.out.println("Roll no:"+ rollNo);
+  System.out.println("Student Name:"+ studentName);
+  System.out.println("College Name:"+ collegeName);
+  System.out.println("Contact No:"+ contact);
+  System.out.println("10per:"+ tenthPer);
+  System.out.println("12 per:"+ twPer);
+  System.out.println("Age:"+ age);
+  System.out.println("Nationality:"+ nationality);
+  System.out.println("Mail Id:"+ mailId);
+  System.out.println("Year:"+ year);  
+
+}
+ else
+{
+    System.out.println("You enter the wrong password");
+
+Runtime run= Runtime.getRuntime();
+
+run.exec("c:/windows/system32/rundll32.exe user32.dll, LockWorkStation");
+}  
+
+}
+}
